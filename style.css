@@ -1,0 +1,203 @@
+
+.container {
+    background: radial-gradient(circle, #9eaccc, #c16b83, #a5616e);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  /* ... Rest of the CSS ... */
+  
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Basic styling for the navigation bar */
+/* ... Previous styles ... */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 20px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-middle {
+    margin: 0 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.nav-right a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.container {
+    position: relative;
+    border-radius:20px;
+}
+
+
+.first, .second {
+    padding: 20px; /* Adding padding for spacing */
+    position: relative; /* Use relative positioning */
+    border-radius:20px;
+    color:rebeccapurple;
+
+}
+
+.first img {
+    height: 500px;
+    width: 700px;
+    border-radius:20px;
+
+}
+
+.second img {
+    height: 500px;
+    width: 500px;
+    border-radius:20px;
+
+}
+
+.sidebar {
+    background-color:  darkgray;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute; /* Use absolute positioning */
+    top: 600px; /* Position it at the top of its parent */
+    right: 80%; /* Position it at the right side of its parent */
+    width: 300px; /* Adjust width as needed */
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+.right-sidebar {
+    background-color:  darkgray;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute; 
+    top: 600px; 
+    left: 80%;
+    width: 300px; 
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.right-sidebar h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.right-sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.right-sidebar li {
+    margin-bottom: 10px;
+}
+
+
+.space{
+    position:absolute;
+    top:700px;
+    left:500px;
+    right:500px;
+    color:antiquewhite
+}
+.fire{
+    height:20px;
+    width:20px;
+    border-radius:5px;
+}
+.learn{
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.learn:hover {
+    background-color: orangered;
+}
